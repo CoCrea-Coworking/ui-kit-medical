@@ -20,7 +20,7 @@
         vm.isSmart = isSmart();
         // config
         vm.app = {
-          name: 'Flatkit',
+          name: 'IoT SaaS',
           version: '1.2.0',
           // for chart colors
           color: {
@@ -66,7 +66,7 @@
 
         vm.setTheme = setTheme;
         setColor();
-        
+
         function setTheme(theme){
           vm.app.setting.theme = theme.theme;
           setColor();
