@@ -15,7 +15,7 @@
   <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
   <meta name="mobile-web-app-capable" content="yes">
   <link rel="shortcut icon" sizes="196x196" href="../assets/images/logo.png">
-  
+
   <!-- style -->
   <link rel="stylesheet" href="../assets/animate.css/animate.min.css" type="text/css" />
   <link rel="stylesheet" href="../assets/glyphicons/glyphicons.css" type="text/css" />
@@ -48,12 +48,12 @@
       </div>
       <div class="hide-scroll" data-flex>
           <nav class="scroll nav-light">
-            
+
               <ul class="nav" ui-nav>
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Main</small>
                 </li>
-                
+
                 <li>
                   <a href="dashboard.html" >
                     <span class="nav-icon">
@@ -64,7 +64,7 @@
                     <span class="nav-text">Dashboard</span>
                   </a>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -98,7 +98,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -129,7 +129,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a href="widget.html" >
                     <span class="nav-icon">
@@ -140,11 +140,11 @@
                     <span class="nav-text">Widgets</span>
                   </a>
                 </li>
-            
+
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Components</small>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -248,7 +248,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -335,7 +335,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -391,7 +391,7 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li>
                   <a>
                     <span class="nav-caret">
@@ -490,17 +490,17 @@
                     </li>
                   </ul>
                 </li>
-            
+
                 <li class="nav-header hidden-folded">
                   <small class="text-muted">Help</small>
                 </li>
-                
+
                 <li class="hidden-folded" >
                   <a href="docs.html" >
                     <span class="nav-text">Documents</span>
                   </a>
                 </li>
-            
+
               </ul>
           </nav>
       </div>
@@ -520,7 +520,7 @@
     </div>
   </div>
   <!-- / -->
-  
+
   <!-- content -->
   <div id="content" class="app-content box-shadow-z0" role="main">
     <div class="app-header white box-shadow">
@@ -530,10 +530,10 @@
               <i class="material-icons">&#xe5d2;</i>
             </a>
             <!-- / -->
-        
+
             <!-- Page title - Bind to $state's title -->
             <div class="mb-0 h5 no-wrap" ng-bind="$state.current.data.title" id="pageTitle"></div>
-        
+
             <!-- navbar collapse -->
             <div class="collapse navbar-collapse" id="collapse">
               <!-- link and dropdown -->
@@ -546,12 +546,12 @@
                   <div ui-include="'../views/blocks/dropdown.new.html'"></div>
                 </li>
               </ul>
-        
+
               <div ui-include="'../views/blocks/navbar.form.html'"></div>
               <!-- / -->
             </div>
             <!-- / navbar collapse -->
-        
+
             <!-- navbar right -->
             <ul class="nav navbar-nav ml-auto flex-row">
               <li class="nav-item dropdown pos-stc-xs">
@@ -882,10 +882,10 @@
           <div style="margin: 0 -2px">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { 
-                  data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]], 
-                  points: { show: true, radius: 0}, 
-                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0.1 } 
+                {
+                  data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]],
+                  points: { show: true, radius: 0},
+                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0.1 }
                 }
               ],
               {
@@ -911,12 +911,12 @@
           <div class="box-body">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { 
-                  data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]], 
-                  points: { show: true, radius: 5}, 
-                  splines: { show: true, tension: 0.45, lineWidth: 5} 
+                {
+                  data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]],
+                  points: { show: true, radius: 5},
+                  splines: { show: true, tension: 0.45, lineWidth: 5}
                 }
-              ], 
+              ],
               {
                 colors: ['#fcc100'],
                 series: { shadowSize: 3 },
@@ -940,12 +940,12 @@
           <div class="box-body">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { 
-                  data: [[1, 2], [2, 1.6], [3, 2.4], [4, 2.1], [5, 1.7], [6, 1.5], [7, 1.7]], 
-                  points: { show: true, radius: 3}, 
-                  splines: { show: true, tension: 0.45, lineWidth: 0, fill: 0.4} 
+                {
+                  data: [[1, 2], [2, 1.6], [3, 2.4], [4, 2.1], [5, 1.7], [6, 1.5], [7, 1.7]],
+                  points: { show: true, radius: 3},
+                  splines: { show: true, tension: 0.45, lineWidth: 0, fill: 0.4}
                 }
-              ], 
+              ],
               {
                 colors: ['#0cc2aa'],
                 series: { shadowSize: 3 },
@@ -970,7 +970,7 @@
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
                 { data: [[1, 2], [2, 4], [3, 5], [4, 7], [5, 6], [6, 4], [7, 5], [8, 4]] }
-              ], 
+              ],
               {
                 bars: { show: true, fill: true,  barWidth: 0.3, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, align: 'center' },
                 colors: ['#fcc100'],
@@ -996,7 +996,7 @@
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
                 { data: [[3, 1], [2, 2], [6, 3], [5, 4], [7, 5]] }
-              ], 
+              ],
               {
                 bars: { horizontal: true, show: true, fill: true,  barWidth: 0.3, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, align: 'center' },
                 colors: ['#0cc2aa'],
@@ -1023,7 +1023,7 @@
               [
                 { data: [[1, 2], [2, 4], [3, 5], [4, 7], [5, 6], [6, 4], [7, 5], [8, 4]] },
                 { data: [[1, 3], [2, 4], [3, 3], [4, 6], [5, 5], [6, 4], [7, 5], [8, 3]] }
-              ], 
+              ],
               {
                 bars: { show: true, fill: true,  barWidth: 0.3, lineWidth: 1, order: 1, fillColor: { colors: [{ opacity: 0.5 }, { opacity: 0.9}] }, align: 'center'},
                 colors: ['#0cc2aa','#fcc100'],
@@ -1052,7 +1052,7 @@
                 series: { pie: { show: true, innerRadius: 0.6, stroke: { width: 0 }, label: { show: true, threshold: 0.05 } } },
                 legend: {backgroundColor: 'transparent'},
                 colors: ['#0cc2aa','#fcc100'],
-                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },   
+                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
                 tooltip: true,
                 tooltipOpts: { content: '%s: %p.0%' }
               }
@@ -1073,7 +1073,7 @@
                 series: { pie: { show: true, innerRadius: 0, stroke: { width: 0 }, label: { show: true, threshold: 0.05 } } },
                 legend: {backgroundColor: 'transparent'},
                 colors: ['#0cc2aa','#fcc100'],
-                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },   
+                grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
                 tooltip: true,
                 tooltipOpts: { content: '%s: %p.0%' }
               }
@@ -1095,7 +1095,7 @@
                   series: { pie: { show: true, innerRadius: 0, stroke: { width: 2, color: '#fff' }, label: { show: true, threshold: 0.05 }, tilt: 0.5, startAngle: 30 } },
                   legend: {backgroundColor: 'transparent'},
                   colors: ['#fcc100','#0cc2aa'],
-                  grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },   
+                  grid: { hoverable: true, clickable: true, borderWidth: 0, color: 'rgba(120,120,120,0.5)' },
                   tooltip: true,
                   tooltipOpts: { content: '%s: %p.0%' }
                 }
@@ -1113,17 +1113,17 @@
           <div class="box-body">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { 
-                  data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]], 
-                  points: { show: true, radius: 0}, 
-                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0 } 
+                {
+                  data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]],
+                  points: { show: true, radius: 0},
+                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0 }
                 },
-                { 
-                  data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]], 
-                  points: { show: true, radius: 0}, 
-                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0 } 
+                {
+                  data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]],
+                  points: { show: true, radius: 0},
+                  splines: { show: true, tension: 0.45, lineWidth: 2, fill: 0 }
                 }
-              ], 
+              ],
               {
                 colors: ['#0cc2aa','#fcc100'],
                 series: { shadowSize: 3 },
@@ -1147,15 +1147,15 @@
           <div class="box-body">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { 
-                  data: [[1, 2], [2, 4], [3, 5], [4, 7], [5, 6], [6, 4], [7, 5], [8, 4]], 
-                  bars: { show: true, barWidth: 0.25, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, order:1 } 
+                {
+                  data: [[1, 2], [2, 4], [3, 5], [4, 7], [5, 6], [6, 4], [7, 5], [8, 4]],
+                  bars: { show: true, barWidth: 0.25, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, order:1 }
                 },
-                { 
-                  data: [[1, 3], [2, 4], [3, 3], [4, 6], [5, 5], [6, 4], [7, 5], [8, 3]], 
-                  bars: { show: true, barWidth: 0.25, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, order:2 } 
+                {
+                  data: [[1, 3], [2, 4], [3, 3], [4, 6], [5, 5], [6, 4], [7, 5], [8, 3]],
+                  bars: { show: true, barWidth: 0.25, lineWidth: 1, fillColor: { colors: [{ opacity: 0.8 }, { opacity: 1}] }, order:2 }
                 }
-              ], 
+              ],
               {
                 colors: ['#0cc2aa','#fcc100'],
                 series: { shadowSize: 3 },
@@ -1179,14 +1179,14 @@
           <div class="box-body">
             <div ui-jp="plot" ui-refresh="app.setting.color" ui-options="
               [
-                { data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]], 
-                  points: { show: true, radius: 3}, 
-                  lines: { show: true, lineWidth: 1} 
+                { data: [[1, 6.1], [2, 6.3], [3, 6.4], [4, 6.6], [5, 7.0], [6, 7.7], [7, 8.3]],
+                  points: { show: true, radius: 3},
+                  lines: { show: true, lineWidth: 1}
                 },
-                { data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]], 
-                  bars: { show: true, barWidth: 0.4, align: 'center', lineWidth: 1, fillColor: { colors: [{ opacity: 0.6 }, { opacity: 1}] } } 
+                { data: [[1, 5.5], [2, 5.7], [3, 6.4], [4, 7.0], [5, 7.2], [6, 7.3], [7, 7.5]],
+                  bars: { show: true, barWidth: 0.4, align: 'center', lineWidth: 1, fillColor: { colors: [{ opacity: 0.6 }, { opacity: 1}] } }
                 }
-              ], 
+              ],
               {
                 colors: ['#fcc100','#0cc2aa'],
                 series: { shadowSize: 3 },
@@ -1217,7 +1217,7 @@
         <i class="fa fa-gear"></i>
       </a>
       <div class="box-header">
-        <a href="https://themeforest.net/item/flatkit-app-ui-kit/13231484?ref=flatfull" class="btn btn-xs rounded danger pull-right">BUY</a>
+
         <h2>Theme Switcher</h2>
       </div>
       <div class="box-divider"></div>
@@ -1294,7 +1294,7 @@
         </div>
       </div>
     </div>
-    
+
     <div class="switcher box-color black lt" id="sw-demo">
       <a href ui-toggle-class="active" target="#sw-demo" class="box-color black lt text-color sw-btn">
         <i class="fa fa-list text-white"></i>
@@ -1333,7 +1333,7 @@
             class="p-a col-sm-6 info">
             <span class="text-white">Five</span>
           </a>
-          <div 
+          <div
             class="p-a col-sm-6 lter">
             <span class="text">...</span>
           </div>
